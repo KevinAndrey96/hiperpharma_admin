@@ -1,10 +1,3 @@
-<!--<h1>Iniciar sesión</h1>
-<form method="POST" action="{{ route('UserController.login') }}">
-    {{ csrfField() }}
-    <input type="email" name="email">
-    <input type="password" name="password">
-    <input type="submit" value="Iniciar Sesión">
-</form>-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -35,15 +28,6 @@
 		<!--/Preloader-->
 		
 		<div class="wrapper pa-0">
-			<header class="sp-header">
-				<div class="sp-logo-wrap pull-left">
-					<a href="index.html">
-						<img class="brand-img mr-10" src="dist/img/logo.png" alt="brand"/>
-						<span class="brand-text">iperpharma</span>
-					</a>
-				</div>
-				<div class="clearfix"></div>
-			</header>
 			
 			<!-- Main Content -->
 			<div class="page-wrapper pa-0 ma-0 auth-page">
@@ -54,25 +38,27 @@
 							<div class="auth-form  ml-auto mr-auto no-float">
 								<div class="row">
 									<div class="col-sm-12 col-xs-12">
+										<div class="sp-logo-wrap text-center pa-0 mb-30">
+											<a href="index.html">
+												<img class="brand-img mr-10" src="dist/img/logo.png" alt="brand"/>
+												<span class="brand-text">iperpharma</span>
+											</a>
+										</div>
 										<div class="mb-30">
-											<h3 class="text-center txt-dark mb-10">Iniciar Sesión en Hiperpharma</h3>
+											<h3 class="text-center txt-dark mb-10">Recuperar contraseña</h3>
 										</div>	
 										<div class="form-wrap">
-											<form action="{{ route('UserController.login') }}" method="POST">
-												{{ csrfField() }}
+											<form action="#">
 												<div class="form-group">
-													<label class="control-label mb-10" for="exampleInputEmail_2">Correo</label>
-													<input type="email" class="form-control" name="email" value="kaherreras@unal.edu.co" required="" id="exampleInputEmail_2" placeholder="Ingrese Correo">
+													<label class="pull-left control-label mb-10" for="exampleInputpwd_2">Nueva Contraseña</label>
+													<input type="password" class="form-control" required="" id="exampleInputpwd_2" placeholder="Digite Nueva contraseña">
 												</div>
 												<div class="form-group">
-													<label class="pull-left control-label mb-10" value="123456" for="exampleInputpwd_2">Contraseña</label>
-													<a class="capitalize-font txt-primary block mb-10 pull-right font-12" href="forgot-password.html">¡No Recuerda la Contraseña?</a>
-													<div class="clearfix"></div>
-													<input type="password" class="form-control" name="password" required="" value="123456" id="exampleInputpwd_2" placeholder="Ingrese contraseña">
+													<label class="pull-left control-label mb-10" for="exampleInputpwd_3">Confirmar contraseña</label>
+													<input type="password" class="form-control" required="" id="exampleInputpwd_3" placeholder="Confirmar contraseña">
 												</div>
-												
 												<div class="form-group text-center">
-													<button type="submit" class="btn btn-info btn-success btn-rounded">Iniciar Sesión</button>
+													<button type="submit" class="btn btn-info btn-success btn-rounded">Recuperar</button>
 												</div>
 											</form>
 										</div>
